@@ -1,0 +1,56 @@
+.Header {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.links {
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logout {
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    color: #48c6ef;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.logout:hover {
+    background: linear-gradient(90deg, #48c6ef, #6f86d6);
+    color: #fff;
+    transition: background 0.5s, color 0.5s;
+}
+
+.links > a,
+.logout {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+.links > a:hover {
+    color: #48c6ef;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.links > a[class='active'] {
+    background: linear-gradient(90deg, #48c6ef, #6f86d6);
+    color: #fff;
+    transition: background 0.5s, color 0.5s;
+}
+

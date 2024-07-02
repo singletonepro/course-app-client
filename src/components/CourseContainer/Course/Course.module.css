@@ -1,0 +1,47 @@
+.CourseCard {
+    width: 100%;
+    max-width: 300px;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.CourseCard h2 {
+    max-height: 100px;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.CourseCard p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0.25rem 0;
+}
+
+.ApplyButton {
+    width: 80%;
+    height: 2.5rem;
+    margin-top: 1rem;
+    background-color: #6a11cb;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.ApplyButton:hover {
+    background-color: #2575fc;
+}
