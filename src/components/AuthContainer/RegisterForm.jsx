@@ -34,13 +34,10 @@ const RegisterForm = () => {
                 {error && <span>User with this username already exists</span>}
 
                 <input type="text" placeholder={'Name'} {...register('name', {required: true})}/>
-                {errors.username && <span>{errors.username.message}</span>}
 
                 <input type="email" placeholder={'Email'} {...register('email', {required: true})}/>
-                {errors.email && <span>{errors.username.message}</span>}
 
                 <input type="password" placeholder={'Password'} {...register('password', {required: true})}/>
-                {errors.password && <span>{errors.password.message}</span>}
 
                 <button disabled={!isValid} id={styles.btnReg}>Register</button>
                 <span>Have an account? <NavLink to={'/login'}>Log In</NavLink></span>
